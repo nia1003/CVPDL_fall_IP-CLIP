@@ -1,0 +1,15 @@
+einops
+ftfy
+gdown
+numpy
+pandas
+Pillow
+regex
+scikit-learn
+tabulate
+tensorboard
+torch
+torchvision
+tqdm
+wilds
+yacs
