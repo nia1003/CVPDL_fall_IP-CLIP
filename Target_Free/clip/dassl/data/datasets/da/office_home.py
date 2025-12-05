@@ -22,7 +22,7 @@ class OfficeHome(DatasetBase):
     """
 
     dataset_dir = "office_home"
-    domains = ["Art", "Clipart", "Product", "Real_world"]
+    domains = ["Art", "Clipart", "Product", "Real\ World"]
 
     def __init__(self, cfg):
         root = osp.abspath(osp.expanduser(cfg.DATASET.ROOT))
