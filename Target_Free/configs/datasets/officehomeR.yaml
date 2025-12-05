@@ -7,12 +7,12 @@ DATASET:
   #  SOURCE_DOMAINS: ["art"]
   #  SOURCE_DOMAINS: ["clipart"]
   #  SOURCE_DOMAINS: ["product"]
-  SOURCE_DOMAINS: ["Real_world"]
+  SOURCE_DOMAINS: ["Real_World"]
 
   #  TARGET_DOMAINS: ["art"]
   #  TARGET_DOMAINS: ["clipart"]
   #  TARGET_DOMAINS: ["product"]
-  TARGET_DOMAINS: ["Real_world"]
+  TARGET_DOMAINS: ["Real_World"]
 # you can modify the code to explore four domains
 
 MODEL:
