@@ -126,11 +126,17 @@ class DatasetBase:
         self.is_input_domain_valid(target_domains)
 
     def is_input_domain_valid(self, input_domains):
+        normalized_domains = {
+            d.lower().replace(" ", "_"): d for d in self.domains
+        }
+
         for domain in input_domains:
-            if domain not in self.domains:
+            key = domain.lower().replace(" ", "_")
+            if key not in normalized_domains:
                 raise ValueError(
-                    "Input domain must belong to {}, "
-                    "but got [{}]".format(self.domains, domain)
+                    "Input domain must belong to {}, but got [{}]".format(
+                        self.domains, domain
+                    )
                 )
 
     def download_data(self, url, dst, from_gdrive=True):
